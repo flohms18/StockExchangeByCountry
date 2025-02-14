@@ -1,20 +1,18 @@
 import random as rd
+
 Stock = {}
 
 for i in range(2010,2020):
     Stock[i] = {
-        'CAC40' : rd.randint(1,9),
-        'NASDAQ' : rd.randint(1,9),
-        'EURONEXT' : rd.randint(1,9)
+        'CAC40' : rd.randint(1,100),
+        'NASDAQ' : rd.randint(1,100),
+
     }
-
-    print(Stock[i]['CAC40'])
-    print(Stock[i]['NASDAQ'])
-
-
-    if Stock[i]['CAC40'] > Stock[i]['NASDAQ']:
-        print("C")
+    if Stock[i]['CAC40'] < Stock[i]['NASDAQ']:
+        print("C WINS")
     else:
-        print("W")
+        print("N WINS")
+
+
 
     
